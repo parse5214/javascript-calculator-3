@@ -1,13 +1,120 @@
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+  display: grid;
+  width: 100%;
+  height: 300px;
+  grid-template-areas: 
+  "dAr dAr dAr dAr"
+  "mul div AC AC"
+  "one two three add"
+  "four five six sub"
+  "seven eight nine dec"
+  "zero zero equal equal";
+}
+
+.padButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b2bec3;
+  border: 1px solid #2d3436;
+}
+
+.dArea {
+  padding: 5px;
+  grid-area: dAr;
+  background-color: black;
+  color: white;
+  text-align: right;
+}
+
+.dExpression {
+  color: #0984e3;
+  height: 15px;
+  padding: 5px;
+}
+
+.dInput {
+  height: 15px;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#add {
+  grid-area: add;
+  background-color: #a29bfe;
+}
+
+#subtract {
+  grid-area: sub;
+  background-color: #a29bfe;
+}
+
+#multiply {
+  grid-area: mul;
+  background-color: #a29bfe;
+}
+
+#divide {
+  grid-area: div;
+  background-color: #a29bfe;
+}
+
+#decimal {
+  grid-area: dec;
+  background-color: #a29bfe;
+}
+
+#equals {
+  grid-area: equal;
+  background-color: #ff7675;
+}
+
+#clear {
+  grid-area: AC;
+  background-color: #ff7675;
 }
